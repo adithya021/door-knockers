@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link src="dummy.js"></link>
+<div id="topnav" class="topnav"></div>
+<style> 
+.bg{opacity: 0.7;}
+
+.kmm { position:absolute; top: 300px; left: 100px; z-index: 1; }
+.war { position:absolute; top: 300px; left: 500px; z-index: 2; }
+.kar { position:absolute; top: 300px; left: 900px; z-index: 3; }
+
+body {
+    font-family: comic Sans MS ,sans-serif;
+}
+ 
+
+
+.topnav {
+  overflow: hidden;
+  background-color: darkgreen;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: green;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+
+html, head, body, {
+    position:fixed;
+
+}
+
+</style>
+</head>
+<body bgcolor="grey">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br><br>
+  <a href="#"><img class= "ik" align="left" src="/home/eswecha/Desktop/doorknockers'/prof1.jpeg" height="50" width="50">&nbsp;&nbsp;<h4><br>Profile</h4></a>
+ <a href="#"><img class= "ik" align="left" src="/home/eswecha/Desktop/doorknockers'/feedback.png" height="50" width="50">&nbsp;&nbsp;<h4><br>Feedback</h4></a>
+<a href="#"><img class= "ik" align="left" src="/home/eswecha/Desktop/doorknockers'/call.jpg" height="50" width="50">&nbsp;&nbsp;<h4><br>Call us : 9063718391</h4></a>
+  <a href="#"><img class= "ik" align="left" src="/home/eswecha/Desktop/doorknockers'/whatsapp.png.png" height="50" width="50">&nbsp;&nbsp;<h4><br>Whatsapp:9063718391</h4></a>
+</div>
+<div id="main" style="background-color: #ff9933">
+  <span style="font-family: Courier 10pitch;font-size:40px;cursor:pointer"onclick="openNav()">&#9776;&nbsp;&nbsp;<b>Door Knockers</b></span>
+  <span href=style="font-size:15px;cursor:pointer">&emsp;&nbsp;<b>
+<a href="#"><img class= "gk" align="right" src="/home/eswecha/Desktop/doorknockers'/duplicate/cart.png" height="70" width="60"></a>	
+<select name="Services" id="s1" style="font-size:20px" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+		<option value="">Services</option>
+		<option value="milk.html">Daily Milk</option>
+		<option value="vegetables.html">Daily Vegetables</option>
+		<option value="food.html">Food Delivery</option>
+	</select></b></span>
+	>
+</div>
+<div class="bg">
+ <img src="/home/eswecha/Desktop/doorknockers'/Featured-image-indian-food.jpg" width="100%" height="100%">
+<div class="kmm">
+		
+		<a href="#"><img src="/home/eswecha/Desktop/doorknockers'/kmm1.jpg" width="250px" height="200px" align="absolute"></a>
+		</div>
+		
+  <div class="war">
+	 <a href= "#"><img src="/home/eswecha/Desktop/doorknockers'/war.jpg"  width="250px" height="200px" align="absolute"></a> 
+	  </div>
+	  
+	  <div class="kar">
+		<a href="#"><img src="/home/eswecha/Desktop/doorknockers'/karim.jpg" width="250px" height="200px" align="absolute"></a>
+      </div>
+      
+ </div>
+	
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>     
+</body>
+</html> 
